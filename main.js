@@ -90,6 +90,7 @@ const news = [
   {
     title: 'Reflecting on 2019 season',
     date: '5th Jan 2020',
+    image: './images/sunrise.jpg',
     body: 'The 2019 PGA Europro season on the whole was a great success for me. Although a final OOM position of 56th was not excactly what I had in mind, it represents a huge improvement after the struggles of my first two seasons as a pro. My season included two top tens, and eight out of fifteen cuts made. A big thanks goes to my team; Simon (coach), Andy (physio) and Greg and Dunc (Underpin); and all of my sponsors and supporters who helped make everything possible.'
   }
 ];
@@ -99,7 +100,31 @@ for(let i = 0; i < newsCards.length; i++) {
   newsCards[i].children[0].innerText = news[i].title;
   newsCards[i].children[1].innerText = news[i].date;
   newsCards[i].children[2].innerText = news[i].body;
+
+  // hide every card above 3
+  /*if(i > 2) {
+    newsCards[i].parentElement.style.display = 'none';
+  }*/
 }
+
+// slider experimenting
+
+const left = document.getElementById('move-left');
+const right = document.getElementById('move-right');
+//const cards = Array.from(document.querySelectorAll('.news-card'));
+const cardHolder = document.querySelector('#news-card-holder');
+
+left.addEventListener('click', () => {
+  if(cardHolder.className === 'one') {
+    cardHolder.className = 'two';
+  }
+});
+
+right.addEventListener('click', () => {
+  if(cardHolder.className === 'two') {
+    cardHolder.className = 'one';
+  }
+});
 
 // upcoming events
 
