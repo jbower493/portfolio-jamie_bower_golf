@@ -8,59 +8,68 @@
     <title>Jamie Bower Golf</title>
   </head>
   <body id="body">
+
+    <div class="loader">
+      <div id="spinner"></div>
+    </div>
   <!--<div class="mob">-->
     <header>
       <a href="#"><h4>Jamie Bower Golf</h4></a>
       <i id="toggle" class="fas fa-bars"></i>
       <nav>
         <ul>
-          <li><a href="#" class="nav-link">Tournaments</a></li>
-          <li><a href="#" class="nav-link">About Me</a></li>
-          <li><a href="#" class="nav-link">My Team</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#team" class="nav-link">My Team</a></li>
+          <li><a href="#events" class="nav-link">Tournaments</a></li>
+          <li><a href="#sponsorship" class="nav-link">Sponsorship</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="home">
 
-      <div class="home-content">
-        <h1>Jamie Bower</h1>
-        <div class="black-line"></div>
-        <div class="accent-line"></div>
-        <p>Professional Golfer playing on The PGA Europro Tour</p>
-      </div>
+        <div class="home-content">
+          <h1>Jamie Bower</h1>
+          <div class="black-line"></div>
+          <div class="accent-line"></div>
+          <p>Professional Golfer playing on The PGA Europro Tour</p>
+        </div>
+
+        <img src="./images/rudding_cutout.png" alt="Jamie olding follow through">
 
     </section>
 
     <section class="news">
 
       <h2>News</h2>
-      <div class="card-holder">
-        <div class="card">
-          <img src="./images/jamie_follow_through.jpg" alt="Jamie Bower watching his tee shot fly">
-          <div class="card-body">
-            <h3 class="card-title">World Snooker Champs</h3>
-            <p class="news-text">This is the world snooker open news box</p>
-            <i class="fas fa-angle-down fa-2x"></i>
+      <div class="news-card-holder">
+        <div class="news-card">
+          <img src="" alt="Jamie Bower watching his tee shot fly">
+          <div class="news-card-body">
+            <h3 class="news-card-title"></h3>
+            <small class="news-date"></small>
+            <p class="news-text"></p>
+            <!--<i class="fas fa-angle-down fa-2x"></i>--><div class="btn btn-accent read-more">Read more</div>
           </div>
         </div>
 
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h3 class="card-title">World Snooker Championship</h3>
-            <p class="news-text">This needs to have display none.</p>
-            <i class="fas fa-angle-down fa-2x"></i>
+        <div class="news-card">
+          <img src="" alt="A golf course">
+          <div class="news-card-body">
+            <h3 class="news-card-title"></h3>
+            <small class="news-date"></small>
+            <p class="news-text"></p>
+            <div class="btn btn-accent read-more">Read more</div>
           </div>
         </div>
 
-        <div class="card">
-          <img src="" alt="">
-          <div class="card-body">
-            <h3 class="card-title">World Snooker Championship</h3>
-            <p class="news-text">This needs to have display none.</p>
-            <i class="fas fa-angle-down fa-2x"></i>
+        <div class="news-card">
+          <img src="" alt="Greg and Duncan">
+          <div class="news-card-body">
+            <h3 class="news-card-title"></h3>
+            <small class="news-date"></small>
+            <p class="news-text"></p>
+            <div class="btn btn-accent read-more">Read more</div>
           </div>
         </div>
       </div>
@@ -74,7 +83,7 @@
 
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-text">
         <h2>About Me</h2>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
@@ -85,6 +94,216 @@
 
       <img src="./images/jamie_portrait.jpg" alt="Porttrait photo of Jamie Bower">
     </section>
+
+    <section id="team" class="team">
+      <h2>My Team</h2>
+
+      <div class="team-card-holder">
+        <div class="team-card">
+          <div class="team-card-head"></div>
+          <img src="./images/greg_and_dunc.jpg" alt="Greg Robertson and Duncan McCarthy from Underpin Sports">
+          <div class="team-card-body">
+            <a href="https://www.underpinsports.com/" target="_blank"><h3>Underpin Sports</h3></a>
+            <h4>Management</h4>
+            <p>Underpin is a sports performance agency founded and run by Greg Robertson and Duncan McCarthy. I’ve
+              known both Greg and Duncan for several years now and it was a very easy decision to sign with Underpin
+              at the start of 2019. Since then, I’ve found it invaluable having the combination of Greg’s business
+              expertise and Duncan’s wealth of experience in performance coaching to help guide me through the early
+              stages of my professional career. Their player first approach helps me identify ways to maximise my
+              potential both on and off the course.</p>
+            <div class="btn btn-accent read-more">Read more</div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-head"></div>
+          <img src="./images/simon.png" alt="Portrait photo of Simon Race">
+          <div class="team-card-body">
+            <a href="https://www.meltham-golf.co.uk/Professional.htm" target="_blank"><h3>Simon Race</h3></a>
+            <h4>Coach</h4>
+            <p>Simon is the Head Professional at my home course Meltham Golf Club. He has done a superb job
+              in this role since he started there in 2013, and he is held in extremely high regard by the
+              members. Simon has been coaching me since April 2019, and the work we’ve done since then has
+              seen great improvements in my long game. His passion and commitment to coaching is second to
+              none and I look forward to making great strides under his guidance again this year.</p>
+            <div class="btn btn-accent read-more">Read more</div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-head"></div>
+          <img src="./images/andy_young.png" alt="Portrait photo of Andy Young">
+          <div class="team-card-body">
+            <a href="http://www.apyoungphysiotherapy.com/" target="_blank"><h3>Andy Young</h3></a>
+            <h4>Fitness</h4>
+            <p>Andy is a Chartered Physiotherapist and runs his own practice in Holmfirth (A P Young
+              Physiotherapy). I’ve also worked with Andy since April 2019. He provides me with a tailored
+              program which helps me ensure my body is capable of doing the things I’m working on in my golf
+              swing, whilst also maintaining a good base level of strength and fitness. I also see him
+              regularly for treatment during the season, to ensure I stay injury free as much as possible.
+              Andy is a true expert in his field and a crucial part of my team.</p>
+            <div class="btn btn-accent read-more">Read more</div>
+          </div>
+        </div>
+      </div>
+<!--
+      <div class="circle-holder">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>-->
+    </section>
+
+    <section id="events" class="events">
+      <h2>Upcoming Events</h2>
+      <div class="map">
+        <i id="marker1" class="fas fa-map-marker-alt event1"></i>
+        <i id="marker2" class="fas fa-map-marker-alt event2"></i>
+        <i id="marker3" class="fas fa-map-marker-alt event3"></i>
+        <i id="marker4" class="fas fa-map-marker-alt event4"></i>
+        <i id="marker5" class="fas fa-map-marker-alt event5"></i>
+      </div>
+
+      <div class="event-list">
+        <div id="event1" class="event">
+          <img src="./images/europro_logo.png" alt="Europro Tour logo">
+          <div class="event-center">
+            <p></p>
+            <small></small>
+          </div>
+          <small class="event-foot"></small>
+        </div>
+
+        <div id="event2" class="event">
+          <img src="./images/europro_logo.png" alt="Europro Tour logo">
+          <div class="event-center">
+            <p></p>
+            <small></small>
+          </div>
+          <small class="event-foot"></small>
+        </div>
+
+        <div id="event3" class="event">
+          <img src="./images/europro_logo.png" alt="Europro Tour logo">
+          <div class="event-center">
+            <p></p>
+            <small></small>
+          </div>
+          <small class="event-foot"></small>
+        </div>
+
+        <div id="event4" class="event">
+          <img src="./images/europro_logo.png" alt="Europro Tour logo">
+          <div class="event-center">
+            <p></p>
+            <small></small>
+          </div>
+          <small class="event-foot"></small>
+        </div>
+
+        <div id="event5" class="event">
+          <img src="./images/europro_logo.png" alt="Europro Tour logo">
+          <div class="event-center">
+            <p></p>
+            <small></small>
+          </div>
+          <small class="event-foot"></small>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="results">
+      <div class="results-container">
+        <h2>Recent Results</h2>
+
+        <div class="arrow-accent"></div>
+        <div class="arrow-dark"></div>
+        <div class="result-dates">
+          <p class="date">5-7 Jun</p>
+          <p class="date">28-30 Apr</p>
+          <p class="date">21-23 Apr</p>
+          <p class="date">14-16 Apr</p>
+        </div>
+
+        <div class="timeline">
+          <img src="./images/follow_through_no_background.png" alt="Jamie Bower holding a follow through">
+          <div class="result">
+            <small>Irish Masters</small>
+            <h5>T14th (-9)</h5>
+          </div>
+          <div class="result">
+            <small>Irish Masters</small>
+            <h5>T14th (-9)</h5>
+          </div>
+          <div class="result">
+            <small>Irish Masters</small>
+            <h5>T14th (-9)</h5>
+          </div>
+          <div class="result">
+            <small>Irish Masters</small>
+            <h5>T14th (-9)</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsorship" class="sponsorship">
+      <h2>Sponsorship</h2>
+      <p class="sponsorship-intro">Sponsor me for the 2021 seson and get a return as a % of my earnings for the duration of
+        the PGA Europro Tour season
+      </p>
+
+      <div class="sponsorship-holder">
+
+        <div class="sponsorship-type">
+          <h3>Individual Sponsorship</h3>
+          <h4>$100</h4>
+          <ul>
+            <li>1% of all prize money throughout the 2021 season (including earnings on other tours
+              / events)</li>
+            <li>Entry into my golf day in April (details TBA)</li>
+            <li>Regular updates via a sponsors Whatsapp group which you will be invited to join</li>
+          </ul>
+          <div class="btn btn-accent read-more">Read more</div>
+        </div>
+
+        <div class="sponsorship-type">
+          <h3>Business Sponsorship</h3>
+          <h4>$1000</h4>
+          <ul>
+            <li>5% of all prize money throughout the 2021 season (including earnings on other tours
+              / events)</li>
+            <li>Team of 4 players in my golf day in April (details TBA)</li>
+            <li>Your business logo on my clothing and website</li>
+            <li>Rounds of golf with me for you and your employees / clients (available on request and when
+              my tournament schedule permits)
+            </li>
+            <li>Regular updates via a sponsors Whatsapp group which you will be invited to join</li>
+          </ul>
+          <div class="btn btn-accent read-more">Read more</div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <section class="contact">
+
+      <h2>Get in touch</h2>
+
+      <form method="POST" name="golf-contact" netlify>
+        <input id="name" type="text" name="name" placeholder="Name">
+        <input id="email" type="email" name="email" placeholder="Email">
+        <textarea id="message" name="message" placeholder="Type your message here and I'll get back to you"></textarea>
+        <input id="submit" class="btn-wide" type="submit" value="Send">
+      </form>
+
+    </section>
+
+    <footer>
+      <p>Some stuff in the foooter</p>
+    </footer>
 
   <!--</div>-->
 
