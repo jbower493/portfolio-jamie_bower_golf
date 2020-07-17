@@ -510,7 +510,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   #carousel {
     width: 940px;
     height: 336px;
