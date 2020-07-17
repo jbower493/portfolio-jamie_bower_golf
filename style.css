@@ -386,7 +386,7 @@ nav a:hover {
 /* news section */
 
 .news {
-  padding: 30px 20px;
+  padding: 30px 10px;
   background-color: var(--clr-light);
 }
 
@@ -402,7 +402,7 @@ nav a:hover {
   overflow-y: visible;
   width: 280px;
   height: 316px;
-  margin: 0 20px;
+  margin: 0 5px;
   position: relative;
   box-shadow: var(--bs);
 }
@@ -500,6 +500,14 @@ nav a:hover {
 }
 
 @media (min-width: 350px) {
+  .news {
+    padding: 30px 20px;
+  }
+
+  .carousel {
+    margin: 0 20px;
+  }
+
   .news-card {
     width: 280px;
   }
