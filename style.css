@@ -70,6 +70,7 @@ h5 {
 
 p {
   font-size: var(--fs-p);
+  line-height: 1.6;
 }
 
 small {
@@ -462,11 +463,6 @@ nav a:hover {
 
 .news-card-body {
   padding: 10px 20px 20px 20px;
-}
-
-.news-text {
-  display: none;
-  margin-bottom: 20px;
 }
 
 .news-date {
@@ -1076,11 +1072,52 @@ footer p {
 /* seperate news page */
 
 .news-page {
-  padding: 100px 30px;
+  padding: 100px 20px 30px 20px;
+  background-color: white;
 }
 
-.news-page h1 {
-  margin: 300px 0;
+.news-page .news-card {
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: none;
+}
+
+.news-page .news-card img {
+  box-shadow: var(--bs);
+}
+
+.news-page .news-card-body {
+  padding: 10px 0 0 0;
+}
+
+.news-page .news-card-title {
+  margin-bottom: 0px;
+  height: auto;
+}
+
+@media (min-width: 350px) {
+  .news-page .news-card {
+    width: 100%;
+  }
+
+  .news-card-holder {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 500px) {
+  .news-page .news-card {
+    max-width: 800px;
+    padding-bottom: 20px;
+    margin: 30px auto;
+    border-bottom: 1px solid var(--clr-accent);
+  }
+
+  .news-page img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 
