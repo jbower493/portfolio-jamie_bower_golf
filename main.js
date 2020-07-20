@@ -200,6 +200,12 @@ const tournaments = [
     name: 'Scottish Links Championship',
     venue: 'Montrose, Scotland',
     date: '1-3 Aug'
+  },
+  {
+    id: 6,
+    name: 'Irish Masters',
+    venue: 'Tulfarris, Ireland',
+    date: '8-10 aug'
   }
 ];
 
