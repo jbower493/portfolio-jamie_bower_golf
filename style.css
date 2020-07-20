@@ -87,6 +87,7 @@ small {
   width: 320px;
   margin: 0 auto;
   background-color: var(--clr-light);
+  border: 1px solid black;
 }
 
 body {
@@ -386,47 +387,46 @@ nav a:hover {
 /* news section */
 
 .news {
-  padding: 30px 10px;
+  padding: 30px 3vw;
   background-color: var(--clr-light);
 }
 
-#carousel-holder {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #carousel {
-  overflow-x: hidden;
-  overflow-y: visible;
-  width: 280px;
-  height: 316px;
-  margin: 0 10px;
+  width: 44vw;
+  overflow: hidden;
+  height: 400px;
   position: relative;
-  box-shadow: var(--bs);
+
+  background-color: blue;
 }
 
 #news-card-holder {
+  width: calc(44vw * 4);
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  left: 0;
-  transition: left 500ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: 
+}
+
+.news-card {
+  background-color: white;
+  height: fit-content;
+  width: 44vw;
+  height: 316px;
 }
 
 .slide2 #news-card-holder {
-  left: -320px;
+  left: -44vw;
 }
 
 .slide3 #news-card-holder {
-  left: -640px;
+  left: -88vw;
 }
 
 .slide4 #news-card-holder {
-  left: -960px;
+  left: -132vw;
 }
+
+
 
 #move-left, #move-right {
   cursor: pointer;
@@ -435,14 +435,6 @@ nav a:hover {
 
 .slide1 #move-left, .slide4 #move-right {
   visibility: hidden;
-}
-
-.news-card {
-  background-color: white;
-  box-shadow: var(--bs);
-  height: fit-content;
-  width: 280px;
-  margin-right: 40px;
 }
 
 .news-card:last-of-type {
@@ -500,48 +492,10 @@ nav a:hover {
 }
 
 @media (min-width: 350px) {
-  .news {
-    padding: 30px 20px;
-  }
-
-  .carousel {
-    margin: 0 20px;
-  }
-
-  .news-card {
-    width: 280px;
-  }
-
-  .news-card-holder {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  
 }
 
 @media (min-width: 1100px) {
-  #carousel {
-    width: 940px;
-    height: 336px;
-    box-shadow: none;
-  }
-
-  #news-card-holder {
-    left: 10px;
-    top: 10px;
-  }
-
-  .slide2 #news-card-holder {
-    left: -310px;
-  }
-  
-  .slide3 #news-card-holder {
-    left: -630px;
-  }
-  
-  .slide4 #news-card-holder {
-    left: -950px;
-  }
-
   .slide1 #move-left, .slide2 #move-right {
     visibility: hidden;
   }
