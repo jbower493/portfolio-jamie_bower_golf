@@ -816,8 +816,10 @@ nav a:hover {
 
 @media (min-width: 1000px) {
   .map {
-    width: 300px;
-    height: 375px;
+    /*width: 300px;
+    height: 375px;*/
+    width: 400px;
+    height: 400px;
   }
 
   .event-list {
