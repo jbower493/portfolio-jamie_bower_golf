@@ -698,12 +698,12 @@ nav a:hover {
 }
 
 .map {
-  width: 200px;
+  width: 280px;
   margin: 0 auto 20px auto;
-  height: 250px;
-  background: url('./images/uk.png') no-repeat center;
+  height: 280px;
+  /*background: url('./images/uk.png') no-repeat center;
   background-size: cover;
-  position: relative;
+  position: relative;*/
 }
 
 #marker1 {
@@ -811,36 +811,6 @@ nav a:hover {
 }
 
 @media (min-width: 1000px) {
-  .map {
-    width: calc(200px * 1.5);
-    height: calc(250px * 1.5);
-  }
-
-  #marker1 {
-    top: calc(190px * 1.5);
-    left: calc(150px * 1.5);
-  }
-  
-  #marker2 {
-    top: calc(170px * 1.5);
-    left: calc(129px * 1.5);
-  }
-  
-  #marker3 {
-    top: calc(196px * 1.5);
-    left: calc(130px * 1.5);
-  }
-  
-  #marker4 {
-    top: calc(145px * 1.5);
-    left: calc(132px * 1.5);
-  }
-  
-  #marker5 {
-    top: calc(70px * 1.5);
-    left: calc(120px * 1.5);
-  }
-
   .event-list {
     width: 550px;
   }

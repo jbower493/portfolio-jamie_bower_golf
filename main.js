@@ -31,7 +31,7 @@ navLinks.forEach(link => {
 });
 
 // highlight map marker when event is clicked
-events.forEach(event => {
+/*events.forEach(event => {
   event.addEventListener('click', (e) => {
     const marked = document.querySelector('.marked');
     if(marked) {
@@ -54,7 +54,7 @@ events.forEach(event => {
     const currentMarker = document.querySelector(`.${marker.id}`);
     currentMarker.classList.add('marked');
   });
-});
+});*/
 
 // open and close card bodies
 readMoreButtons.forEach(button => {
@@ -216,3 +216,49 @@ for(let i = 0; i < tournamentsList.length; i++) {
 }
 
 // recent results
+
+// HERE maps section
+
+const mapElement = document.getElementById('map');
+
+// connect to backend services of HERE
+const platform = new H.service.Platform({
+  'apikey': 'WJbD3-rvJSbCe-X10lC_rAa3Mtq4CuhrG1IxaVp61Mc'
+});
+
+const geocodingService = platform.getGeocodingService();
+
+// Obtain the default map types from the platform object:
+const defaultLayers = platform.createDefaultLayers();
+
+// Instantiate (and display) a map object:
+const map = new H.Map(mapElement, defaultLayers.vector.normal.map, {
+  zoom: 4.5,
+  center: { lat: 54.15028, lng: -4.48096 },
+  pixelRatio: window.devicePixelRatio || 1
+});
+
+window.addEventListener('resize', () => map.getViewPort().resize());
+
+const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+const ui = H.ui.UI.createDefault(map, defaultLayers);
+
+const addMarker = event => {
+  geocodingService.geocode({ searchText: `${event.venue}` }, data => {
+    const position = data.Response.View[0].Result[0].Location.DisplayPosition;
+
+    const marker = new H.map.Marker({
+      lat: position.Latitude,
+      lng: position.Longitude
+    });
+  
+    map.addObject(marker);
+  });
+};
+
+tournaments.forEach(event => {
+  if(tournaments.indexOf(event) < 5) {
+    addMarker(event);
+  }
+});
