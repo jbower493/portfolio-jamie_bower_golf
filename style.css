@@ -401,7 +401,7 @@ nav a:hover {
 }
 
 #carousel {
-  width: 44vw;
+  width: 90vw;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -418,23 +418,21 @@ nav a:hover {
 .news-card {
   background-color: white;
   height: fit-content;
-  width: 44vw;
+  width: 90vw;
   margin-right: 40px;
 }
 
 .slide2 #news-card-holder {
-  left: calc(-44vw - 40px);
+  left: calc(-90vw - 40px);
 }
 
 .slide3 #news-card-holder {
-  left: calc(-88vw - 80px);
+  left: calc(-180vw - 80px);
 }
 
 .slide4 #news-card-holder {
-  left: calc(-132vw - 120px);
+  left: calc(-270vw - 120px);
 }
-
-
 
 #move-left, #move-right {
   cursor: pointer;
