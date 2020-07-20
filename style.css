@@ -402,7 +402,7 @@ nav a:hover {
   overflow-y: visible;
   width: 280px;
   height: 316px;
-  margin: 0 5px;
+  margin: 0 10px;
   position: relative;
   box-shadow: var(--bs);
 }
