@@ -700,7 +700,7 @@ nav a:hover {
 .map {
   width: 280px;
   margin: 0 auto 20px auto;
-  height: 280px;
+  height: 320px;
   /*background: url('./images/uk.png') no-repeat center;
   background-size: cover;
   position: relative;*/
@@ -776,6 +776,10 @@ nav a:hover {
 }
 
 @media (min-width: 700px) {
+  .map {
+    margin-bottom: 0;
+  }
+
   .events {
     padding: 30px;
     display: flex;
@@ -811,6 +815,11 @@ nav a:hover {
 }
 
 @media (min-width: 1000px) {
+  .map {
+    width: 300px;
+    height: 375px;
+  }
+
   .event-list {
     width: 550px;
   }
