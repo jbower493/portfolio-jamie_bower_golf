@@ -272,8 +272,8 @@ nav a:hover {
   position: absolute;
   bottom: 0;
   left: 50%;
-  height: 75%;
-  width: auto;
+  height: auto;
+  width: 48%;
 }
 
 .home {
@@ -324,6 +324,7 @@ nav a:hover {
 
   .home img {
     height: 80%;
+    width: auto;
     left: 55%
   }
 
