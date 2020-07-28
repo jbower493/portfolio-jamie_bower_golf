@@ -173,39 +173,39 @@ left.addEventListener('click', () => {
 const tournaments = [
   {
     id: 1,
-    name: 'Party Poker Championship',
-    venue: 'Caversham Heath, Reading',
-    date: '12-14 Jun'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   },
   {
     id: 2,
-    name: 'Cumberwell Park Championship',
-    venue: 'Cumberwell Park, Bath',
-    date: '19-21 Jun'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   },
   {
     id: 3,
-    name: 'World Snooker Open',
-    venue: 'Clevedon, Bristol',
-    date: '26-28 Jun'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   },
   {
     id: 4,
-    name: 'Clipper Logistics Championship',
-    venue: 'Moor Allerton, Leeds',
-    date: '18-20 Jul'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   },
   {
     id: 5,
-    name: 'Scottish Links Championship',
-    venue: 'Montrose, Scotland',
-    date: '1-3 Aug'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   },
   {
     id: 6,
-    name: 'Irish Masters',
-    venue: 'Tulfarris, Ireland',
-    date: '8-10 aug'
+    name: 'TBD',
+    venue: 'TBD',
+    date: 'TBD'
   }
 ];
 
