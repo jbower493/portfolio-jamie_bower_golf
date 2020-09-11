@@ -286,7 +286,7 @@ nav a:hover {
 
 .home {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/trees_mob.jpg') no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/bunkers_mob.jpg') no-repeat center;
   background-size: cover;
   padding: 45px 20px 0 20px;
   display: flex;
@@ -337,7 +337,8 @@ nav a:hover {
   }
 
   .home {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/trees.jpg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/bunkers.jpg') no-repeat center;
+    background-size: cover;
     padding: 60px 30px 0 30px;
   }
 
@@ -1065,6 +1066,11 @@ footer {
 footer p {
   font-size: var(--fs-small);
   text-align: center;
+}
+
+footer a {
+  color: var(--clr-accent);
+  margin-left: 10px;
 }
 
 .socials {
