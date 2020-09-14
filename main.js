@@ -173,38 +173,44 @@ left.addEventListener('click', () => {
 const tournaments = [
   {
     id: 1,
-    name: 'TBD',
-    venue: 'TBD',
-    date: 'TBD'
+    name: 'Europro Luton Hoo',
+    venue: 'Luton Hoo Golf & Spa, Luton',
+    address: 'Luton Hoo Golf Course, Luton Hoo Estate, Luton',
+    date: '12th - 14th May'
   },
   {
     id: 2,
-    name: 'TBD',
-    venue: 'TBD',
-    date: 'TBD'
+    name: 'Europro Harleyford',
+    venue: 'Harleyford Golf Club, Marlow',
+    address: 'Harleyford Golf Club, Medmenham, Marlow',
+    date: '26th - 28th May'
   },
   {
     id: 3,
-    name: 'TBD',
-    venue: 'TBD',
-    date: 'TBD'
+    name: 'Europro Donnington Grove',
+    venue: 'Donnington Grove, Newbury',
+    address: 'Donnington Grove Country Club, Grove Road, Donnington, Newbury',
+    date: '9th - 11th June'
   },
   {
     id: 4,
-    name: 'TBD',
-    venue: 'TBD',
-    date: 'TBD'
+    name: 'Europro Cumberwell Park',
+    venue: 'Cumberwell Park, Bradford on Avon',
+    address: 'Cumberwell Park Golf Course, Bradford on Avon',
+    date: '16th - 18th June'
   },
   {
     id: 5,
-    name: 'TBD',
-    venue: 'TBD',
-    date: 'TBD'
+    name: 'Europro Montrose',
+    venue: 'Montrose Golf Club, Montrose',
+    address: 'Montrose Golf Club, Montrose',
+    date: '23rd - 25th June'
   },
   {
     id: 6,
     name: 'TBD',
     venue: 'TBD',
+    address: '',
     date: 'TBD'
   }
 ];
@@ -216,6 +222,10 @@ for(let i = 0; i < tournamentsList.length; i++) {
 }
 
 // recent results
+
+
+
+
 
 // HERE maps section
 
@@ -233,7 +243,7 @@ const defaultLayers = platform.createDefaultLayers();
 
 // Instantiate (and display) a map object:
 const map = new H.Map(mapElement, defaultLayers.vector.normal.map, {
-  zoom: 4.5,
+  zoom: 5,
   center: { lat: 54.15028, lng: -4.48096 },
   pixelRatio: window.devicePixelRatio || 1
 });
@@ -245,7 +255,7 @@ const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 const ui = H.ui.UI.createDefault(map, defaultLayers);
 
 const addMarker = event => {
-  geocodingService.geocode({ searchText: `${event.venue}` }, data => {
+  geocodingService.geocode({ searchText: `${event.address}` }, data => {
     const position = data.Response.View[0].Result[0].Location.DisplayPosition;
 
     const marker = new H.map.Marker({

@@ -305,6 +305,11 @@ nav a:hover {
   letter-spacing: 3px;
 }
 
+.thin-accent-line {
+  height: 1px;
+  background-color: var(--clr-accent);
+}
+
 .black-line {
   height: 5px;
   width: 80%;
@@ -713,7 +718,7 @@ nav a:hover {
   background-size: cover;
   position: relative;*/
 }
-
+/*
 #marker1 {
   position: absolute;
   top: 190px;
@@ -743,10 +748,10 @@ nav a:hover {
   top: 70px;
   left: 120px;
 }
-
+*/
 .event {
   display: flex;
-  border-bottom: 2px solid var(--clr-accent);
+  border-bottom: 1px solid var(--clr-accent);
   padding: 5px 0;
   cursor: pointer;
 }
@@ -843,7 +848,8 @@ nav a:hover {
 
 .results {
   padding: 30px 20px;
-  background-color: var(--clr-light);
+  /*background-color: var(--clr-light);*/
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/flinders_1st_tee_mob.jpg') no-repeat center;
 }
 
 .results-container {
@@ -853,23 +859,24 @@ nav a:hover {
 
 .results h2 {
   width: 100%;
+  color: white;
 }
 
 .arrow-accent {
-  width: 5px;
+  width: 1px;
   background-color: var(--clr-accent);
   margin-right: 5px;
 }
 
 .arrow-dark {
-  width: 5px;
+  width: 1px;
   margin-top: 50px;
-  background-color: var(--clr-dark);
+  background-color: white;
 }
 
 .result-dates {
   width: 80px;
-  padding-top: 160px;
+  padding-top: 50px;
 }
 
 .date {
@@ -877,21 +884,26 @@ nav a:hover {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  padding-left: 10px;
+  padding-left: 40px;
   font-size: 0.75rem;
   font-weight: 700;
+  color: white;
 }
 
-.timeline {
+.spacer-width {
   flex: 1;
 }
 
+.timeline {
+  padding-top: 50px
+}
+/*
 .timeline img {
   width: auto;
   height: 160px;
   margin: 0 auto;
   display: block;
-}
+}*/
 
 .result {
   color: var(--clr-accent);
@@ -915,20 +927,16 @@ nav a:hover {
 @media (min-width: 450px) {
   .results {
     padding: 0;
-    background: url('./images/course.jpg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/flinders_1st_tee.jpg') no-repeat center;
     background-size: cover;
   }
 
   .results-container {
     z-index: 1;
-    width: 380px;
+    width: 400px;
     margin: 0 auto;
     padding: 30px 0;
-    background-color: var(--clr-light);
-  }
-
-  .arrow-accent {
-    margin-left: 40px;
+    /*background-color: var(--clr-light);*/
   }
 
   .date {
@@ -939,7 +947,7 @@ nav a:hover {
 /* sponsorship section */
 
 .sponsorship {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/sunrise_mob.jpg') no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/flinders_1st_tee_mob.jpg') no-repeat center;
   background-size: cover;
   padding: 30px 20px;
 }
@@ -1012,6 +1020,11 @@ nav a:hover {
 }
 
 @media (min-width: 800px) {
+  .sponsorship {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/flinders_1st_tee.jpg') no-repeat center;
+    background-size: cover;
+  }
+
   .sponsorship-holder {
     display: flex;
     justify-content: space-evenly;
