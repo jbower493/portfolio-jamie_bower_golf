@@ -7,79 +7,93 @@
     <link rel="stylesheet" href="style.css">
     <title>Jamie Bower Golf</title>
   </head>
-  <body id="body">
 
-    <div class="loader">
-      <div id="spinner"></div>
-    </div>
+  <body class="bg-dark">
 
     <header>
-      <a href="index.html"><h4>Jamie Bower Golf</h4></a>
-      <i id="toggle" class="fas fa-bars"></i>
+      <a href="index.html"><h1>jamie bower golf</h1></a>
       <nav>
         <ul>
-          <li><a href="index.html#about" class="nav-link">About Me</a></li>
-          <li><a href="index.html#team" class="nav-link">My Team</a></li>
-          <li><a href="index.html#events" class="nav-link">Tournaments</a></li>
-          <li><a href="index.html#sponsorship" class="nav-link">Sponsorship</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#team">my team</a></li>
+          <li><a href="index.html#schedule">schedule</a></li>
+          <li><a href="index.html#results">results</a></li>
+          <li><a href="index.html#sponsorship">sponsorship</a></li>
         </ul>
       </nav>
+      <div id="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+
+      <div id="mobile-nav" class="mobile-nav closed">
+        <ul>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#team">my team</a></li>
+          <li><a href="index.html#schedule">schedule</a></li>
+          <li><a href="index.html#results">results</a></li>
+          <li><a href="index.html#sponsorship">sponsorship</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="news-page">
 
       <h2>News</h2>
 
-      <div class="news-card">
-        <img src="" alt="">
+      <div id="news1" class="news-card">
+        <img class="news-image" src="" alt="">
         <div class="news-card-body">
-          <h3 class="news-card-title"></h3>
+          <h3 class="news-title"></h3>
           <small class="news-date"></small>
-          <p class="news-text"></p>
+          <p class="news-body"></p>
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="" alt="">
+      <div id="news2" class="news-card">
+        <img class="news-image" src="" alt="">
         <div class="news-card-body">
-          <h3 class="news-card-title"></h3>
+          <h3 class="news-title"></h3>
           <small class="news-date"></small>
-          <p class="news-text"></p>
+          <p class="news-body"></p>
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="" alt="">
+      <div id="news3" class="news-card">
+        <img class="news-image" src="" alt="">
         <div class="news-card-body">
-          <h3 class="news-card-title"></h3>
+          <h3 class="news-title"></h3>
           <small class="news-date"></small>
-          <p class="news-text"></p>
+          <p class="news-body"></p>
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="" alt="">
+      <div id="news4" class="news-card">
+        <img class="news-image" src="" alt="">
         <div class="news-card-body">
-          <h3 class="news-card-title"></h3>
+          <h3 class="news-title"></h3>
           <small class="news-date"></small>
-          <p class="news-text"></p>
+          <p class="news-body"></p>
         </div>
       </div>
 
     </section>
 
     <footer>
-      <div class="socials">
-        <div class="social">
-          <a href="https://twitter.com/jbowergolf?lang=en" target="_blank" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+      <div class="footer-content">
+        <div class="contact">
+          <div class="socials">
+            <a href="https://twitter.com/jbowergolf?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jamiebowergolf/?hl=en"><i class="fab fa-instagram insta"></i></a>
+            <a href="https://uk.linkedin.com/in/jamie-bower-a574581a2?trk=people-guest_people_search-card"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a class="email" href="mailto:jamiebower03@gmail.com">jamiebower03@gmail.com</a>
         </div>
-        <div class="social">
-          <a href="https://www.instagram.com/jamiebowergolf/?hl=en" target="_blank" class="instagram"><i class="fab fa-instagram fa-2x"></i></a>
-        </div>
+        <small>Website design and development by Jamie Bower <a href=""><i class="fas fa-external-link-alt"></i></a></small>
       </div>
-      <p>Designed and built by Jamie Bower<a href="https://jbdev.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
     </footer>
 
-    <script src="news.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -29,7 +29,7 @@ a {
   --clr-black: #0A0A0A;
 
   --fs-large: 1.1rem;
-  --fs-small: 0.9rem;
+  --fs-small: 0.93rem;
   --fs-tiny: 0.8rem;
   --fs-miniscule: 0.7rem;
 }
@@ -43,6 +43,7 @@ h1, h2, h3 {
 h1 {
   font-size: 1.3rem;
   font-weight: 300;
+  color: white;
 }
 
 h2 {
@@ -116,9 +117,18 @@ header nav ul li a, #mobile-nav ul li a {
   margin-top: 0;
 }
 
-
+.bar {
+  width: 25px;
+  height: 1px;
+  margin: 6px 0;
+  background-color: white;
+}
 
 @media (max-width: 1050px) {
+  header {
+    padding: 10px 20px;
+  }
+
   #hamburger {
     display: block;
   }
@@ -132,7 +142,7 @@ header nav ul li a, #mobile-nav ul li a {
 
 #home {
   height: 85vh;
-  background: url("images/line_up_desktop.jpg") no-repeat center;
+  background: url("images/line_up_desktop_wide.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -159,6 +169,13 @@ header nav ul li a, #mobile-nav ul li a {
 .home-text p {
   letter-spacing: 2px;
   font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  #home {
+    background: url("images/line_up_mob.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 /* news section */
@@ -479,7 +496,7 @@ header nav ul li a, #mobile-nav ul li a {
 /* results section */
 
 #results {
-  background: url("images/seed.JPG") no-repeat center;
+  background: url("images/seed_wide.JPG") no-repeat center;
   background-size: cover;
 }
 
@@ -562,6 +579,13 @@ header nav ul li a, #mobile-nav ul li a {
   .results-content {
     width: 400px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #results {
+    background: url("images/seed_mob.JPG") no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -744,5 +768,61 @@ footer i {
 
   .contact {
     margin-bottom: 50px;
+  }
+}
+
+/* news page */
+
+.news-page {
+  padding: 100px 30px 30px 30px;
+}
+
+.news-page h2 {
+  text-align: center;
+}
+
+.news-page .news-card {
+  display: flex;
+  margin-top: 50px;
+}
+
+.news-page .news-image {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.news-page .news-date {
+  font-size: var(--fs-small);
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.news-page .news-body {
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .news-page .news-card {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  
+  .news-page .news-image {
+    margin: 0 0 10px 0;
+  }
+
+  .news-page .news-date {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .news-page .news-image {
+    width: 100%;
+    height: 70vw;
   }
 }
